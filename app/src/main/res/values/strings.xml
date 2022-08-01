@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Seafood</string>
+    <string name="header_col_name">Comida</string>
+    <string name="header_col_price">Precio</string>
+    <string name="header_col_amount">Cantidad</string>
+    <string name="header_col_bill">Cuenta</string>
+    <string name="app_cancel">Cancelar</string>
+    <string name="app_accept">Aceptar</string>
+    <string name="app_account">Cuenta</string>
+    <string name="dialog_account">Total: </string>
+    <string name="dialog_cash">Efectivo: </string>
+    <string name="dialog_rest">Cambio: </string>
+    <string name="error_act_main_list">Hubo un error al obtener la lista de comida</string>
+    <string name="warning_act_main_account">"El total a pagar es:\n"</string>
+
+
+</resources>

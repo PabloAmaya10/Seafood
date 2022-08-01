@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.view.MainActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/collection_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/row_collection_credit_btn_paid"
+                style="@style/Table_Button_Simple"
+                android:background="@color/black"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="@string/header_col_bill"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/col_header_tv_food"
+                style="@style/Table_Text_Header"
+                android:text="@string/header_col_name"
+                app:layout_constraintEnd_toStartOf="@+id/col_header_tv_price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/row_collection_credit_btn_paid" />
+
+            <TextView
+                android:id="@+id/col_header_tv_price"
+                style="@style/Table_Text_Header"
+                android:text="@string/header_col_price"
+                app:layout_constraintEnd_toStartOf="@+id/col_header_tv_amount"
+                app:layout_constraintStart_toEndOf="@+id/col_header_tv_food"
+                app:layout_constraintTop_toBottomOf="@+id/row_collection_credit_btn_paid" />
+
+            <TextView
+                android:id="@+id/col_header_tv_amount"
+                style="@style/Table_Text_Header"
+                android:text="@string/header_col_amount"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/col_header_tv_price"
+                app:layout_constraintTop_toBottomOf="@+id/row_collection_credit_btn_paid" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerFood"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layoutManager="LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/collection_header" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

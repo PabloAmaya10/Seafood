@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_elevation_default">0dp</dimen>
+    <dimen name="keyline_small">8dp</dimen>
+    <dimen name="keyline_smaller">4dp</dimen>
+</resources>
